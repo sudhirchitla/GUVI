@@ -40,7 +40,7 @@ request.onload = function () {
 
 // Get all the countries from Asia continent or “region” using Filter function.
 countrydata.filter(element => {
-    if (element.region = 'Asia')
+    if (element.region === 'Asia')
     console.log(element.name, element.region);
 });
 
