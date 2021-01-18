@@ -61,7 +61,7 @@ console.log(total);
 
 // Print the country which uses US Dollars as currency.
 countrydata.filter(element => {
-    if (element.currencies[0].code = 'USD')
+    if (element.currencies[0].code === 'USD')
     console.log(element.name, element.currencies[0].code);
 });
 
