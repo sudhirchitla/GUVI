@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
     <link href="resume.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
@@ -34,12 +34,14 @@
                 <div class="mycontent">
                     <h4><i class="fa fa-user-circle-o" aria-hidden="true"></i>
                         Profile</h4>
-                    <p>Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitous, adventurous, assiduous, animated and an alliteration advovate.</p>
+                    <UL class="skills">
+                        <li>Innovative optimized solution seeker. Excited to be at the deployment phase of my new career as a web developer. I am ambitous, adventurous, assiduous, animated and an alliteration advovate.</li>
+                    </UL>
                 </div>
                 <div class="mycontent">
                     <h4><i class="fa fa-universal-access" aria-hidden="true"></i>
                         Skills</h4>
-                    <h5>– TECHNICAL SKILLS</h5>
+                    <h5 class="core">TECHNICAL SKILLS</h5>
                         <ul class="skills">
                            <li>JavaScript </li>
                            <li>CSS</li>
@@ -50,7 +52,7 @@
                            <li>Deployment</li>
                         </ul>
             
-                    <h5>– ADDITIONAL SKILLS</h5>
+                    <h5 class="core">ADDITIONAL SKILLS</h5>
                         <ul class="skills">
                             <li>Project Management</li>
                             <li>Recruitment</li>
@@ -64,9 +66,10 @@
                         <i class="fa fa-briefcase" aria-hidden="true"></i>   
             
                         Work experience</h4>
-                    <p>03/2014 – 02/2017    WASHINGTON DC
-                    <h5>Event Manager</h5>
-                    <h6>C3 Presents</h6>
+                    <div>
+                    <h5>Event Manager   <span class="mydate">03/2014 – 02/2017</span></h5>
+                    <h6>C3 Presents, Washinton DC</h6>
+                    </div>
                     <ul>
                         <li>
                             Lead and execute all phases of event planning and production spanning committee recruitment, training, vendor relationships and on-site facilitation.
@@ -90,9 +93,10 @@
             <i class="fa fa-briefcase" aria-hidden="true"></i>   
 
             Work experience</h4>        
-        <p>06/2011 – 01/2014    LOS ANGELES
-            <h5>Community Relations Manager</h5>
-            <h6>Gay & Lesbian Elder Housing</h6>
+            <div>
+            <h5>Community Relations Manager     <span class="mydate">06/2011 – 01/2014</span></h5>
+            <h6>Gay & Lesbian Elder Housing, Los Angeles</h6>
+            </div>
             <ul>
                 <li>
                     Arranging presentations and pitch deck.
@@ -114,9 +118,14 @@
         <h4><i class="fa fa-book" aria-hidden="true"></i>
             Education</h4>
         <p>
-        <h5>Engineering Immersion Program</h5><span>11/2018 – 06/2018</span>
-        <h6>Thinkful, Chicago, IL</h6>
-        <BR>Project-focused intensive program with emphasis on Mongo, Express, React, and JavaScript (MERN) technical stack.</BR>
+        <div>
+            <h5>Engineering Immersion Program</h5><span class="mydate">11/2018 – 06/2018</span>
+            <h6>Thinkful, Chicago, IL</h6>
+        </div>
+        <ul class="skills">
+            <li>Project-focused intensive program with emphasis on Mongo, Express, React, and JavaScript (MERN) technical stack.</li>
+        </ul>
+        
         <ul>
             <li>
                 Developed a full-stack web application, "RenewU", using React that allows users to explore various aspects of meditation. User's progress is stored on a backend created using Node and MongoDB.
@@ -129,10 +138,10 @@
             </li>
         </ul>
         </p>
-        <p>
-            <h5>BA, English</h5><span>09/2001 – 09/2005</span>
+        <div>
+            <h5>BA, English</h5><span class="mydate">09/2001 – 09/2005</span>
             <h6>University of California, Los Angles</h6>            
-        </p>
+        </div>
     </div>
                 
             </div>

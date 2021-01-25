@@ -50,9 +50,23 @@ H2 {
     border-radius: 10px;
     
 }
-h5{
+
+.core{
+    text-align: center;
     margin: 0px;
 }
+
+.mydate{
+    display: block; 
+    text-align: right;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+h5, h6{
+    margin: 0px;
+}
+
 Address {
     background-color: white;
     display: block;
@@ -63,6 +77,10 @@ Address {
 
 hr {
     margin: 0px;
+}
+
+UL{
+    text-align: justify
 }
 
 ul.skills{
