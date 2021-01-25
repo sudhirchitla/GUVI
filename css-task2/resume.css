@@ -79,7 +79,7 @@ hr {
     margin: 0px;
 }
 
-UL{
+ul{
     text-align: justify
 }
 
@@ -111,8 +111,6 @@ i {
   .col-12 {
     flex-basis: 100%;
     max-width: 100%;
-    
-
   }
   
   .col-6 {
@@ -130,7 +128,34 @@ i {
     max-width: 8.33%;
   }
 
+  .col-5 {
+    flex-basis: 50%;
+    max-width: 20%;
+  }
+
   span{
       background-color: white;
       display: block;
+  }
+
+  .container1 {
+    height: auto;
+    padding: 0% 5%;
+    display: inline-block;
+    justify-content: right;
+}
+
+
+
+  .mybar1{
+    height: 10px;
+    background-color: gold;
+    display: block;
+    border: none;
+  }
+  .mybar2{
+    height: 10px;
+    background-color:lightgrey;
+    display: block;
+    border: none;
   }
