@@ -1,0 +1,118 @@
+html,
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+    text-justify: auto;
+}
+
+div{
+    text-justify:auto;
+
+}
+
+.myheader{
+    align-items:center;
+}
+
+
+img{
+    height: 100px;
+    width: 100px;
+}
+  
+.container {
+    height: auto;
+    padding: 0% 10%;
+}
+
+.mystyle {
+    background-color: lightseagreen;
+    justify-items: center;
+}
+
+.mycontent{
+    margin: 5px;
+    border-width: 0px;
+    border-color: greenyellow;
+    border-style: solid;
+}
+
+H2 {
+    background-color: rgb(226, 198, 36);
+    display: inline-block;
+    font-size: 38px;
+    padding: 4px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    
+}
+h5{
+    margin: 0px;
+}
+Address {
+    background-color: white;
+    display: block;
+    font-size: 12px;
+    margin: 0px;
+    text-align: center;
+}
+
+hr {
+    margin: 0px;
+}
+
+ul.skills{
+    margin-bottom: 10px;
+    list-style: none;
+    font-weight: lighter;
+}
+
+i {
+    color: lightseagreen;
+}
+
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border: solid;
+    border-width: 1px;
+    
+
+  }
+  
+  .col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+    
+
+  }
+  
+  .col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+  
+  .col-4 {
+    flex-basis: 33%;
+    max-width: 33%;
+  }
+  
+  .col-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%;
+  }
+
+  span{
+      background-color: white;
+      display: block;
+  }
