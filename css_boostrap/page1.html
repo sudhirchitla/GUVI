@@ -50,6 +50,17 @@
         i{
             color: red;
         }
+
+        .child {
+        /* ... */
+        position: absolute;
+        top: -10px;
+        left: 0px;
+        }
+
+        .parent {
+        position: relative;
+        }
         
     </style>
 
@@ -75,8 +86,11 @@
     <nav class="navbar fixed-top navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
       </nav>
-    -->
-
+   <div class="position-fixed">        
+        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        <a href="page1.html"><i class="fa fa-arrow-right" aria-hidden="true"></i>Next Page</a>
+   </div>
+-->   
     
     <div class="fixed-top"> 
         <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a><br>
@@ -131,8 +145,13 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis similique consectetur dolorum eius vitae, sunt consequuntur harum voluptate numquam inventore consequatur molestias recusandae laudantium dolores quisquam deleniti nesciunt temporibus. Explicabo?
         </div>
         <div class="col-8 p-2">
-            <mark class="bg-danger font-weight-bold font-italic text-monospace text-white">25 12 34</mark>
-            <img src="https://place-hold.it/800x300?text=Something Here&italic" alt="" class="img-fluid">
+            
+            <div class="parent">
+                <img src="https://place-hold.it/800x300?text=Something Here&italic" alt="" class="img-fluid">
+                <div class="child">
+                    <mark class="bg-danger font-weight-bold font-italic text-monospace text-white">25 12 34</mark>
+                </div>
+            </div>
 
         </div>
     </div>
