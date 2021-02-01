@@ -62,6 +62,14 @@
 
         }
 
+        function foo() {
+            for (let i=11;i<21;i++){
+                output1 += '<tr><td>'+myData[i].id+'</td><td>'+myData[i].name+'</td><td>'+myData[i].email+'</td></tr>';
+            }
+            document.getElementById('myInfo').innerHTML = output1;
+
+        }
+
 
 
     </script>
@@ -104,7 +112,7 @@
                           <li class="page-item active" aria-current="page">
                             <span class="page-link">1</span>
                           </li>
-                          <li class="page-item"><a class="page-link" href="#" onclick="foo()">2</a></li>
+                          <li class="page-item"><a class="page-link" href="javascript:foo()">2</a></li>
                           <li class="page-item"><a class="page-link" href="#">3</a></li>
                           <li class="page-item"><a class="page-link" href="#">4</a></li>
                           <li class="page-item"><a class="page-link" href="#">5</a></li>
