@@ -34,10 +34,14 @@
         request.open('GET', 'https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json', true);
         // 3. send the connection
         request.send();
-        // 4. register a event listener. once the data is ready, 
+        // 4. register a event listener. once the data is ready
+
+        var myData;
 
         request.onload = function () {
-            var myData = JSON.parse(this.response);
+
+            myData = JSON.parse(this.response);
+
             console.log(myData[0]);
             var myDataLength = myData.length;
             var noPages = myDataLength / 20;
@@ -47,26 +51,39 @@
             var output = '';
             var output1 = '';
 
-
+            /*
             myData.forEach(element => {
                 output += '<tr><td>'+element.id+'</td><td>'+element.name+'</td><td>'+element.email+'</td></tr>';
             });
+            */
 
             for (let i=0;i<10;i++){
                 output1 += '<tr><td>'+myData[i].id+'</td><td>'+myData[i].name+'</td><td>'+myData[i].email+'</td></tr>';
             }
 
             document.getElementById('myInfo').innerHTML = output1;
-
+            
+        
     
 
         }
+ 
+        function foo(pg) {
 
-        function foo() {
-            for (let i=11;i<21;i++){
+            let output1 ='';
+
+            for (let i=((pg-1)*10);i<(pg*10);i++){
                 output1 += '<tr><td>'+myData[i].id+'</td><td>'+myData[i].name+'</td><td>'+myData[i].email+'</td></tr>';
             }
+            console.log(output1);
             document.getElementById('myInfo').innerHTML = output1;
+
+            //element.classlist.append
+
+            appendChild
+            append
+            
+            
 
         }
 
@@ -109,19 +126,25 @@
                 <div class="col-8">
                     <nav aria-label="...">
                         <ul class="pagination pagination-xl justify-content-end">
+                        <!--
                           <li class="page-item active" aria-current="page">
                             <span class="page-link">1</span>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="javascript:foo()">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item"><a class="page-link" href="#">4</a></li>
-                          <li class="page-item"><a class="page-link" href="#">5</a></li>
-                          <li class="page-item"><a class="page-link" href="#">6</a></li>
-                          <li class="page-item"><a class="page-link" href="#">7</a></li>
-                          <li class="page-item"><a class="page-link" href="#">8</a></li>
-                          <li class="page-item"><a class="page-link" href="#">9</a></li>
-                          <li class="page-item"><a class="page-link" href="#">10</a></li>
+                          </li> 
+                        -->
+                          <li class="page-item"><button class="page-link" onclick="foo(1)">1</button></li>
+                          <li class="page-item"><button class="page-link" onclick="foo(2)">2</button></li>
+                          <li class="page-item"><button class="page-link" onclick="foo(3)">3</button></li>
+                          <li class="page-item"><button class="page-link" onclick="foo(4)">4</button></li>
+                          <li class="page-item"><button class="page-link" onclick="foo(5)">5</button></li>
+                          <li class="page-item"><button class="page-link" onclick="foo(6)">6</button></li>
+                          <li class="page-item"><button class="page-link" onclick="foo(7)">7</button></li>
+                          <li class="page-item"><button class="page-link" onclick="foo(8)">8</button></li>
+                          <li class="page-item"><button class="page-link" onclick="foo(9)">9</button></li>
+                          <li class="page-item"><button class="page-link" onclick="foo(10)">10</button></li>
+
                         </ul>
+                        
+
                     </nav>
                 </div>
                 <div class="col-2"></div>
