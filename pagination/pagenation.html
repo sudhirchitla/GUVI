@@ -15,6 +15,19 @@
         th {
             font-size: 16px;
         }
+        li:active{
+            background:#336699;
+        }
+        button:focus{
+            background:#336699;
+        }
+        button:active{
+            background:#336699;
+        }        
+        li:focus{
+            background:#336699;
+
+        }
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -67,25 +80,44 @@
     
 
         }
- 
-        function foo(pg) {
-
+        
+        /*
+        function showContent(pgNo) {
             let output1 ='';
-
-            for (let i=((pg-1)*10);i<(pg*10);i++){
+            for (let i=((pgNo-1)*10);i<(pgNo*10);i++){
                 output1 += '<tr><td>'+myData[i].id+'</td><td>'+myData[i].name+'</td><td>'+myData[i].email+'</td></tr>';
             }
             console.log(output1);
             document.getElementById('myInfo').innerHTML = output1;
-
             //element.classlist.append
-
-            appendChild
-            append
-            
-            
-
         }
+        */
+
+        function showContent(pgNo) { 
+
+            document.getElementById('myInfo').innerHTML = '';
+
+
+            for (let i=((pgNo-1)*10);i<(pgNo*10);i++){
+            
+            var node = document.createElement("tr");
+            var td = document.createElement("td");
+            var td1 = document.createElement("td");
+            var td2 = document.createElement("td");
+
+            node.appendChild(td);
+            td.appendChild(document.createTextNode(myData[i].id));
+
+            node.appendChild(td1);
+            td1.appendChild(document.createTextNode(myData[i].name));
+
+            node.appendChild(td2);
+            td2.appendChild(document.createTextNode(myData[i].email));
+
+            document.getElementById("myInfo").appendChild(node); 
+        }
+            
+        } 
 
 
 
@@ -114,7 +146,7 @@
                             <th class="text-white">email</th>
                           </tr>
                         </thead>
-                        <tbody id='myInfo' class="text-">                
+                        <tbody id='myInfo' class="text-italic">                
                         </tbody>
                       </table>
                 </div>
@@ -131,16 +163,19 @@
                             <span class="page-link">1</span>
                           </li> 
                         -->
-                          <li class="page-item"><button class="page-link" onclick="foo(1)">1</button></li>
-                          <li class="page-item"><button class="page-link" onclick="foo(2)">2</button></li>
-                          <li class="page-item"><button class="page-link" onclick="foo(3)">3</button></li>
-                          <li class="page-item"><button class="page-link" onclick="foo(4)">4</button></li>
-                          <li class="page-item"><button class="page-link" onclick="foo(5)">5</button></li>
-                          <li class="page-item"><button class="page-link" onclick="foo(6)">6</button></li>
-                          <li class="page-item"><button class="page-link" onclick="foo(7)">7</button></li>
-                          <li class="page-item"><button class="page-link" onclick="foo(8)">8</button></li>
-                          <li class="page-item"><button class="page-link" onclick="foo(9)">9</button></li>
-                          <li class="page-item"><button class="page-link" onclick="foo(10)">10</button></li>
+                        <li class="page-item"><button class="page-link" onclick="showContent(1)">First</button></li>
+
+                          <li class="page-item"><button class="page-link" onclick="showContent(1)">1</button></li>
+                          <li class="page-item"><button class="page-link" onclick="showContent(2)">2</button></li>
+                          <li class="page-item"><button class="page-link" onclick="showContent(3)">3</button></li>
+                          <li class="page-item"><button class="page-link" onclick="showContent(4)">4</button></li>
+                          <li class="page-item"><button class="page-link" onclick="showContent(5)">5</button></li>
+                          <li class="page-item"><button class="page-link" onclick="showContent(6)">6</button></li>
+                          <li class="page-item"><button class="page-link" onclick="showContent(7)">7</button></li>
+                          <li class="page-item"><button class="page-link" onclick="showContent(8)">8</button></li>
+                          <li class="page-item"><button class="page-link" onclick="showContent(9)">9</button></li>
+                          <li class="page-item"><button class="page-link" onclick="showContent(10)">10</button></li>
+                        <li class="page-item"><button class="page-link" onclick="showContent(10)">Last</button></li>
 
                         </ul>
                         
