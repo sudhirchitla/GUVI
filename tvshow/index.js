@@ -1,6 +1,6 @@
 
 
-var tvmazeUri = 'http://api.tvmaze.com/search/shows?q=';
+var tvmazeUri = 'https://api.tvmaze.com/search/shows?q=';
 
 var tvmazeSearchResult = [];
 var tvmazeInfo = '';
